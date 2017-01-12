@@ -3,64 +3,26 @@ Tentatitve Schedule
 Week 1
   Tue: No class
   Thu: Introduction and Motivation
-    Topics:
-      Why hardware?
-      Why FPGAs?
-      Why can’t hardware design be more like software
-      Course logistics
-    Assignments:
-    Reading:
 
-Week 2 - Introduction to digital logic and hardware design: the hardware abstraction
-  Tue: 
-    Topics: Combinational Logic: LUTs and CARRYs
-  Thu: Sequential Logic: FFs, Counters, Shift registers
-    Skills: verilog, yosys, arachepnr, icestorm, icestick
-    Assignment: simple verilog program on the icestick
-    Reading: David Harris Introduction to verilog
+Week 2 - Introduction to digital logic and hardware design
+  Tue: Combinational Logic
+  Thu: Sequential Logic
+  Assignment: simple verilog program on the icestick
+  Reading: David Harris Introduction to verilog
 
 Week 3
-  Topics:
-    Introduction to magma and mantle
-    Intermediate Magma: Pico
+  Tue: Introduction to magma and mantle
+  Thu: Higher-level primitives, design a processor
   Assignment: simple magma program on the icestick
 
 Week 4
-  Topics:
-    Advanced magma metaprogramming: python metaprogramming techniques
-    DSLs
+  Tue: Advanced magma metaprogramming
+  Thu: Python metaprogramming techniques for building DSLs
   Assignment: Preliminary Project
 
 Week 5
-  Topics:
-    Pico
-    CGRAs
+  Tue: Hardware design tool chain
+  Thu: Project brainstorming
 
-Week 6
-  Topics:
-    Project Ideas
-    Place and route
-    Retiming
-    Optimization
-    Incremental compilation 
-    Test and Debug
-  Assignment: Final Project
-
-Week 7
-  Topics:
-    CoreIR
-    Final Project discussion
-
-Week 7
-  Panel: Differences between hardware and software
-  Panel: Software tool brainstorming
-
-Week 8
-  Guest Lectures/Paper discussions
-
-Week 9
-  Guest Lectures/Paper discussions
-
-Week 10
-Final Projects presentations
+Final Projects 
 
