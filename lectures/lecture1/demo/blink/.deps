@@ -1,8 +1,0 @@
-{
-    ".deps_version": 2, 
-    "python blink.py build/blink": {
-        "blink.py": "input-e104c66279b5099b15990c39fdb3dfc2", 
-        "build/blink.pcf": "output-d0f9688b50dbf201786bebcc4e7594d2", 
-        "build/blink.v": "output-41e5c7c5e01ff923e8a9a76227869dfe"
-    }
-}

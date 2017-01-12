@@ -1,4 +1,4 @@
-NAME = blink
+NAME = counter
 
 DEVICE = 1k
 QUIET = -q

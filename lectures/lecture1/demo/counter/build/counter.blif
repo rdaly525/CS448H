@@ -2,7 +2,7 @@
 
 .model main
 .inputs CLKIN
-.outputs D5
+.outputs D[0] D[1] D[2] D[3] D[4] D[5] D[6] D[7]
 .names $false
 .names $true
 1
@@ -11,153 +11,223 @@
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:43"
 .param LUT_INIT 0110
 .gate SB_LUT4 I0=$false I1=inst0.inst0.inst1_CO I2=$false I3=$true O=inst0.inst0.inst0_O
-.attr src "blink.v:46"
+.attr src "counter.v:62"
 .param LUT_INIT 1100001100111100
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst5_Q I2=$false I3=inst0.inst0.inst9_CO O=inst0.inst0.inst10_O
-.attr src "blink.v:56"
+.attr src "counter.v:72"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst9_CO CO=inst0.inst0.inst11_CO I0=inst0.inst1.inst5_Q I1=$false
-.attr src "blink.v:57"
+.attr src "counter.v:73"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst6_Q I2=$false I3=inst0.inst0.inst11_CO O=inst0.inst0.inst12_O
-.attr src "blink.v:58"
+.attr src "counter.v:74"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst11_CO CO=inst0.inst0.inst13_CO I0=inst0.inst1.inst6_Q I1=$false
-.attr src "blink.v:59"
+.attr src "counter.v:75"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst7_Q I2=$false I3=inst0.inst0.inst13_CO O=inst0.inst0.inst14_O
-.attr src "blink.v:60"
+.attr src "counter.v:76"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst13_CO CO=inst0.inst0.inst15_CO I0=inst0.inst1.inst7_Q I1=$false
-.attr src "blink.v:61"
+.attr src "counter.v:77"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst8_Q I2=$false I3=inst0.inst0.inst15_CO O=inst0.inst0.inst16_O
-.attr src "blink.v:62"
+.attr src "counter.v:78"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst15_CO CO=inst0.inst0.inst17_CO I0=inst0.inst1.inst8_Q I1=$false
-.attr src "blink.v:63"
+.attr src "counter.v:79"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst9_Q I2=$false I3=inst0.inst0.inst17_CO O=inst0.inst0.inst18_O
-.attr src "blink.v:64"
+.attr src "counter.v:80"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst17_CO CO=inst0.inst0.inst19_CO I0=inst0.inst1.inst9_Q I1=$false
-.attr src "blink.v:65"
+.attr src "counter.v:81"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst10_Q I2=$false I3=inst0.inst0.inst19_CO O=inst0.inst0.inst20_O
-.attr src "blink.v:66"
+.attr src "counter.v:82"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst19_CO CO=inst0.inst0.inst21_CO I0=inst0.inst1.inst10_Q I1=$false
-.attr src "blink.v:67"
+.attr src "counter.v:83"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst11_Q I2=$false I3=inst0.inst0.inst21_CO O=inst0.inst0.inst22_O
-.attr src "blink.v:68"
+.attr src "counter.v:84"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst21_CO CO=inst0.inst0.inst23_CO I0=inst0.inst1.inst11_Q I1=$false
-.attr src "blink.v:69"
+.attr src "counter.v:85"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst12_Q I2=$false I3=inst0.inst0.inst23_CO O=inst0.inst0.inst24_O
-.attr src "blink.v:70"
+.attr src "counter.v:86"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst23_CO CO=inst0.inst0.inst25_CO I0=inst0.inst1.inst12_Q I1=$false
-.attr src "blink.v:71"
+.attr src "counter.v:87"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst13_Q I2=$false I3=inst0.inst0.inst25_CO O=inst0.inst0.inst26_O
-.attr src "blink.v:72"
+.attr src "counter.v:88"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst25_CO CO=inst0.inst0.inst27_CO I0=inst0.inst1.inst13_Q I1=$false
-.attr src "blink.v:73"
+.attr src "counter.v:89"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst14_Q I2=$false I3=inst0.inst0.inst27_CO O=inst0.inst0.inst28_O
-.attr src "blink.v:74"
+.attr src "counter.v:90"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst27_CO CO=inst0.inst0.inst29_CO I0=inst0.inst1.inst14_Q I1=$false
-.attr src "blink.v:75"
+.attr src "counter.v:91"
 .gate SB_CARRY CI=inst0.inst0.inst1_CO CO=inst0.inst0.inst3_CO I0=inst0.inst1.inst1_Q I1=$false
-.attr src "blink.v:49"
+.attr src "counter.v:65"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst15_Q I2=$false I3=inst0.inst0.inst29_CO O=inst0.inst0.inst30_O
-.attr src "blink.v:76"
+.attr src "counter.v:92"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst29_CO CO=inst0.inst0.inst31_CO I0=inst0.inst1.inst15_Q I1=$false
-.attr src "blink.v:77"
+.attr src "counter.v:93"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst16_Q I2=$false I3=inst0.inst0.inst31_CO O=inst0.inst0.inst32_O
-.attr src "blink.v:78"
+.attr src "counter.v:94"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst31_CO CO=inst0.inst0.inst33_CO I0=inst0.inst1.inst16_Q I1=$false
-.attr src "blink.v:79"
+.attr src "counter.v:95"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst17_Q I2=$false I3=inst0.inst0.inst33_CO O=inst0.inst0.inst34_O
-.attr src "blink.v:80"
+.attr src "counter.v:96"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst33_CO CO=inst0.inst0.inst35_CO I0=inst0.inst1.inst17_Q I1=$false
-.attr src "blink.v:81"
+.attr src "counter.v:97"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst18_Q I2=$false I3=inst0.inst0.inst35_CO O=inst0.inst0.inst36_O
-.attr src "blink.v:82"
+.attr src "counter.v:98"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst35_CO CO=inst0.inst0.inst37_CO I0=inst0.inst1.inst18_Q I1=$false
-.attr src "blink.v:83"
+.attr src "counter.v:99"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst19_Q I2=$false I3=inst0.inst0.inst37_CO O=inst0.inst0.inst38_O
-.attr src "blink.v:84"
+.attr src "counter.v:100"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst37_CO CO=inst0.inst0.inst39_CO I0=inst0.inst1.inst19_Q I1=$false
-.attr src "blink.v:85"
+.attr src "counter.v:101"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst2_Q I2=$false I3=inst0.inst0.inst3_CO O=inst0.inst0.inst4_O
-.attr src "blink.v:50"
+.attr src "counter.v:66"
 .param LUT_INIT 1100001100111100
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst20_Q I2=$false I3=inst0.inst0.inst39_CO O=inst0.inst0.inst40_O
-.attr src "blink.v:86"
+.attr src "counter.v:102"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst39_CO CO=inst0.inst0.inst41_CO I0=inst0.inst1.inst20_Q I1=$false
-.attr src "blink.v:87"
+.attr src "counter.v:103"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst21_Q I2=$false I3=inst0.inst0.inst41_CO O=inst0.inst0.inst42_O
-.attr src "blink.v:88"
+.attr src "counter.v:104"
 .param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst41_CO CO=inst0.inst0.inst43_CO I0=inst0.inst1.inst21_Q I1=$false
+.attr src "counter.v:105"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst22_Q I2=$false I3=inst0.inst0.inst43_CO O=inst0.inst0.inst44_O
+.attr src "counter.v:106"
+.param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst43_CO CO=inst0.inst0.inst45_CO I0=inst0.inst1.inst22_Q I1=$false
+.attr src "counter.v:107"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst23_Q I2=$false I3=inst0.inst0.inst45_CO O=inst0.inst0.inst46_O
+.attr src "counter.v:108"
+.param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst45_CO CO=inst0.inst0.inst47_CO I0=inst0.inst1.inst23_Q I1=$false
+.attr src "counter.v:109"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst24_Q I2=$false I3=inst0.inst0.inst47_CO O=inst0.inst0.inst48_O
+.attr src "counter.v:110"
+.param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst47_CO CO=inst0.inst0.inst49_CO I0=inst0.inst1.inst24_Q I1=$false
+.attr src "counter.v:111"
 .gate SB_CARRY CI=inst0.inst0.inst3_CO CO=inst0.inst0.inst5_CO I0=inst0.inst1.inst2_Q I1=$false
-.attr src "blink.v:51"
+.attr src "counter.v:67"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst25_Q I2=$false I3=inst0.inst0.inst49_CO O=inst0.inst0.inst50_O
+.attr src "counter.v:112"
+.param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst49_CO CO=inst0.inst0.inst51_CO I0=inst0.inst1.inst25_Q I1=$false
+.attr src "counter.v:113"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst26_Q I2=$false I3=inst0.inst0.inst51_CO O=inst0.inst0.inst52_O
+.attr src "counter.v:114"
+.param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst51_CO CO=inst0.inst0.inst53_CO I0=inst0.inst1.inst26_Q I1=$false
+.attr src "counter.v:115"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst27_Q I2=$false I3=inst0.inst0.inst53_CO O=inst0.inst0.inst54_O
+.attr src "counter.v:116"
+.param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst53_CO CO=inst0.inst0.inst55_CO I0=inst0.inst1.inst27_Q I1=$false
+.attr src "counter.v:117"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst28_Q I2=$false I3=inst0.inst0.inst55_CO O=inst0.inst0.inst56_O
+.attr src "counter.v:118"
+.param LUT_INIT 1100001100111100
+.gate SB_CARRY CI=inst0.inst0.inst55_CO CO=inst0.inst0.inst57_CO I0=inst0.inst1.inst28_Q I1=$false
+.attr src "counter.v:119"
+.gate SB_LUT4 I0=$false I1=inst0.inst1.inst29_Q I2=$false I3=inst0.inst0.inst57_CO O=inst0.inst0.inst58_O
+.attr src "counter.v:120"
+.param LUT_INIT 1100001100111100
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst3_Q I2=$false I3=inst0.inst0.inst5_CO O=inst0.inst0.inst6_O
-.attr src "blink.v:52"
+.attr src "counter.v:68"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst5_CO CO=inst0.inst0.inst7_CO I0=inst0.inst1.inst3_Q I1=$false
-.attr src "blink.v:53"
+.attr src "counter.v:69"
 .gate SB_LUT4 I0=$false I1=inst0.inst1.inst4_Q I2=$false I3=inst0.inst0.inst7_CO O=inst0.inst0.inst8_O
-.attr src "blink.v:54"
+.attr src "counter.v:70"
 .param LUT_INIT 1100001100111100
 .gate SB_CARRY CI=inst0.inst0.inst7_CO CO=inst0.inst0.inst9_CO I0=inst0.inst1.inst4_Q I1=$false
-.attr src "blink.v:55"
+.attr src "counter.v:71"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst0_O Q=inst0.inst0.inst1_CO
-.attr src "blink.v:117"
+.attr src "counter.v:157"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst2_O Q=inst0.inst1.inst1_Q
-.attr src "blink.v:118"
+.attr src "counter.v:158"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst20_O Q=inst0.inst1.inst10_Q
-.attr src "blink.v:127"
+.attr src "counter.v:167"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst22_O Q=inst0.inst1.inst11_Q
-.attr src "blink.v:128"
+.attr src "counter.v:168"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst24_O Q=inst0.inst1.inst12_Q
-.attr src "blink.v:129"
+.attr src "counter.v:169"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst26_O Q=inst0.inst1.inst13_Q
-.attr src "blink.v:130"
+.attr src "counter.v:170"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst28_O Q=inst0.inst1.inst14_Q
-.attr src "blink.v:131"
+.attr src "counter.v:171"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst30_O Q=inst0.inst1.inst15_Q
-.attr src "blink.v:132"
+.attr src "counter.v:172"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst32_O Q=inst0.inst1.inst16_Q
-.attr src "blink.v:133"
+.attr src "counter.v:173"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst34_O Q=inst0.inst1.inst17_Q
-.attr src "blink.v:134"
+.attr src "counter.v:174"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst36_O Q=inst0.inst1.inst18_Q
-.attr src "blink.v:135"
+.attr src "counter.v:175"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst38_O Q=inst0.inst1.inst19_Q
-.attr src "blink.v:136"
+.attr src "counter.v:176"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst4_O Q=inst0.inst1.inst2_Q
-.attr src "blink.v:119"
+.attr src "counter.v:159"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst40_O Q=inst0.inst1.inst20_Q
-.attr src "blink.v:137"
+.attr src "counter.v:177"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst42_O Q=inst0.inst1.inst21_Q
-.attr src "blink.v:138"
+.attr src "counter.v:178"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst44_O Q=inst0.inst1.inst22_Q
+.attr src "counter.v:179"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst46_O Q=inst0.inst1.inst23_Q
+.attr src "counter.v:180"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst48_O Q=inst0.inst1.inst24_Q
+.attr src "counter.v:181"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst50_O Q=inst0.inst1.inst25_Q
+.attr src "counter.v:182"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst52_O Q=inst0.inst1.inst26_Q
+.attr src "counter.v:183"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst54_O Q=inst0.inst1.inst27_Q
+.attr src "counter.v:184"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst56_O Q=inst0.inst1.inst28_Q
+.attr src "counter.v:185"
+.gate SB_DFF C=CLKIN D=inst0.inst0.inst58_O Q=inst0.inst1.inst29_Q
+.attr src "counter.v:186"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst6_O Q=inst0.inst1.inst3_Q
-.attr src "blink.v:120"
+.attr src "counter.v:160"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst8_O Q=inst0.inst1.inst4_Q
-.attr src "blink.v:121"
+.attr src "counter.v:161"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst10_O Q=inst0.inst1.inst5_Q
-.attr src "blink.v:122"
+.attr src "counter.v:162"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst12_O Q=inst0.inst1.inst6_Q
-.attr src "blink.v:123"
+.attr src "counter.v:163"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst14_O Q=inst0.inst1.inst7_Q
-.attr src "blink.v:124"
+.attr src "counter.v:164"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst16_O Q=inst0.inst1.inst8_Q
-.attr src "blink.v:125"
+.attr src "counter.v:165"
 .gate SB_DFF C=CLKIN D=inst0.inst0.inst18_O Q=inst0.inst1.inst9_Q
-.attr src "blink.v:126"
-.names inst0.inst1.inst21_Q D5
+.attr src "counter.v:166"
+.names inst0.inst1.inst22_Q D[0]
+1 1
+.names inst0.inst1.inst23_Q D[1]
+1 1
+.names inst0.inst1.inst24_Q D[2]
+1 1
+.names inst0.inst1.inst25_Q D[3]
+1 1
+.names inst0.inst1.inst26_Q D[4]
+1 1
+.names inst0.inst1.inst27_Q D[5]
+1 1
+.names inst0.inst1.inst28_Q D[6]
+1 1
+.names inst0.inst1.inst29_Q D[7]
 1 1
 .names CLKIN inst0.CLK
 1 1
@@ -205,6 +275,22 @@
 1 1
 .names inst0.inst1.inst21_Q inst0.O[21]
 1 1
+.names inst0.inst1.inst22_Q inst0.O[22]
+1 1
+.names inst0.inst1.inst23_Q inst0.O[23]
+1 1
+.names inst0.inst1.inst24_Q inst0.O[24]
+1 1
+.names inst0.inst1.inst25_Q inst0.O[25]
+1 1
+.names inst0.inst1.inst26_Q inst0.O[26]
+1 1
+.names inst0.inst1.inst27_Q inst0.O[27]
+1 1
+.names inst0.inst1.inst28_Q inst0.O[28]
+1 1
+.names inst0.inst1.inst29_Q inst0.O[29]
+1 1
 .names inst0.inst0.inst1_CO inst0.inst0.I0[0]
 1 1
 .names inst0.inst1.inst1_Q inst0.inst0.I0[1]
@@ -248,6 +334,22 @@
 .names inst0.inst1.inst20_Q inst0.inst0.I0[20]
 1 1
 .names inst0.inst1.inst21_Q inst0.inst0.I0[21]
+1 1
+.names inst0.inst1.inst22_Q inst0.inst0.I0[22]
+1 1
+.names inst0.inst1.inst23_Q inst0.inst0.I0[23]
+1 1
+.names inst0.inst1.inst24_Q inst0.inst0.I0[24]
+1 1
+.names inst0.inst1.inst25_Q inst0.inst0.I0[25]
+1 1
+.names inst0.inst1.inst26_Q inst0.inst0.I0[26]
+1 1
+.names inst0.inst1.inst27_Q inst0.inst0.I0[27]
+1 1
+.names inst0.inst1.inst28_Q inst0.inst0.I0[28]
+1 1
+.names inst0.inst1.inst29_Q inst0.inst0.I0[29]
 1 1
 .names inst0.inst0.inst0_O inst0.inst0.O[0]
 1 1
@@ -293,6 +395,22 @@
 1 1
 .names inst0.inst0.inst42_O inst0.inst0.O[21]
 1 1
+.names inst0.inst0.inst44_O inst0.inst0.O[22]
+1 1
+.names inst0.inst0.inst46_O inst0.inst0.O[23]
+1 1
+.names inst0.inst0.inst48_O inst0.inst0.O[24]
+1 1
+.names inst0.inst0.inst50_O inst0.inst0.O[25]
+1 1
+.names inst0.inst0.inst52_O inst0.inst0.O[26]
+1 1
+.names inst0.inst0.inst54_O inst0.inst0.O[27]
+1 1
+.names inst0.inst0.inst56_O inst0.inst0.O[28]
+1 1
+.names inst0.inst0.inst58_O inst0.inst0.O[29]
+1 1
 .names inst0.inst0.inst0_O inst0.inst0_O[0]
 1 1
 .names inst0.inst0.inst2_O inst0.inst0_O[1]
@@ -336,6 +454,22 @@
 .names inst0.inst0.inst40_O inst0.inst0_O[20]
 1 1
 .names inst0.inst0.inst42_O inst0.inst0_O[21]
+1 1
+.names inst0.inst0.inst44_O inst0.inst0_O[22]
+1 1
+.names inst0.inst0.inst46_O inst0.inst0_O[23]
+1 1
+.names inst0.inst0.inst48_O inst0.inst0_O[24]
+1 1
+.names inst0.inst0.inst50_O inst0.inst0_O[25]
+1 1
+.names inst0.inst0.inst52_O inst0.inst0_O[26]
+1 1
+.names inst0.inst0.inst54_O inst0.inst0_O[27]
+1 1
+.names inst0.inst0.inst56_O inst0.inst0_O[28]
+1 1
+.names inst0.inst0.inst58_O inst0.inst0_O[29]
 1 1
 .names CLKIN inst0.inst1.CLK
 1 1
@@ -383,6 +517,22 @@
 1 1
 .names inst0.inst0.inst42_O inst0.inst1.I[21]
 1 1
+.names inst0.inst0.inst44_O inst0.inst1.I[22]
+1 1
+.names inst0.inst0.inst46_O inst0.inst1.I[23]
+1 1
+.names inst0.inst0.inst48_O inst0.inst1.I[24]
+1 1
+.names inst0.inst0.inst50_O inst0.inst1.I[25]
+1 1
+.names inst0.inst0.inst52_O inst0.inst1.I[26]
+1 1
+.names inst0.inst0.inst54_O inst0.inst1.I[27]
+1 1
+.names inst0.inst0.inst56_O inst0.inst1.I[28]
+1 1
+.names inst0.inst0.inst58_O inst0.inst1.I[29]
+1 1
 .names inst0.inst0.inst1_CO inst0.inst1.O[0]
 1 1
 .names inst0.inst1.inst1_Q inst0.inst1.O[1]
@@ -426,6 +576,22 @@
 .names inst0.inst1.inst20_Q inst0.inst1.O[20]
 1 1
 .names inst0.inst1.inst21_Q inst0.inst1.O[21]
+1 1
+.names inst0.inst1.inst22_Q inst0.inst1.O[22]
+1 1
+.names inst0.inst1.inst23_Q inst0.inst1.O[23]
+1 1
+.names inst0.inst1.inst24_Q inst0.inst1.O[24]
+1 1
+.names inst0.inst1.inst25_Q inst0.inst1.O[25]
+1 1
+.names inst0.inst1.inst26_Q inst0.inst1.O[26]
+1 1
+.names inst0.inst1.inst27_Q inst0.inst1.O[27]
+1 1
+.names inst0.inst1.inst28_Q inst0.inst1.O[28]
+1 1
+.names inst0.inst1.inst29_Q inst0.inst1.O[29]
 1 1
 .names inst0.inst0.inst1_CO inst0.inst1.inst0_Q
 1 1
@@ -473,6 +639,22 @@
 1 1
 .names inst0.inst1.inst21_Q inst0.inst1_O[21]
 1 1
+.names inst0.inst1.inst22_Q inst0.inst1_O[22]
+1 1
+.names inst0.inst1.inst23_Q inst0.inst1_O[23]
+1 1
+.names inst0.inst1.inst24_Q inst0.inst1_O[24]
+1 1
+.names inst0.inst1.inst25_Q inst0.inst1_O[25]
+1 1
+.names inst0.inst1.inst26_Q inst0.inst1_O[26]
+1 1
+.names inst0.inst1.inst27_Q inst0.inst1_O[27]
+1 1
+.names inst0.inst1.inst28_Q inst0.inst1_O[28]
+1 1
+.names inst0.inst1.inst29_Q inst0.inst1_O[29]
+1 1
 .names inst0.inst0.inst1_CO inst0_O[0]
 1 1
 .names inst0.inst1.inst1_Q inst0_O[1]
@@ -516,5 +698,21 @@
 .names inst0.inst1.inst20_Q inst0_O[20]
 1 1
 .names inst0.inst1.inst21_Q inst0_O[21]
+1 1
+.names inst0.inst1.inst22_Q inst0_O[22]
+1 1
+.names inst0.inst1.inst23_Q inst0_O[23]
+1 1
+.names inst0.inst1.inst24_Q inst0_O[24]
+1 1
+.names inst0.inst1.inst25_Q inst0_O[25]
+1 1
+.names inst0.inst1.inst26_Q inst0_O[26]
+1 1
+.names inst0.inst1.inst27_Q inst0_O[27]
+1 1
+.names inst0.inst1.inst28_Q inst0_O[28]
+1 1
+.names inst0.inst1.inst29_Q inst0_O[29]
 1 1
 .end
