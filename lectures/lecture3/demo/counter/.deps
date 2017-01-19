@@ -1,0 +1,8 @@
+{
+    ".deps_version": 2, 
+    "python counter4.py build/counter4": {
+        "build/counter4.pcf": "output-f32562cb7ae4b7268dd73b2884d40e9c", 
+        "build/counter4.v": "output-f66e89e47d33ae5cbeb51635d3547f3b", 
+        "counter4.py": "input-a09515f81507d23e5256b40cb6e97f69"
+    }
+}
