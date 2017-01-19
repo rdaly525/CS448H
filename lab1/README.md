@@ -5,7 +5,7 @@ Welcome to the first lab!
 You will be building a Johnson Counter and a decoder in structural verilog, and should be able to see it running on your icestick!
 
 ###Due date: 
-Friday 1/27 at 12:00pm
+Friday 1/27 at 11:59pm
 
 ###Instructions:
 First, go through the icestick tutorial and make sure you get the blink program running on your own machine. Also make sure you understand each step of the tool chain.
