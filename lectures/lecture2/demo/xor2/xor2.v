@@ -1,4 +1,4 @@
-module main ( input [2:0] J1, output D5 );
+module main ( input [1:0] J1, output D5 );
 
 wire not1_O;
 wire not2_O;
