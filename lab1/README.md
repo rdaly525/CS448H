@@ -16,7 +16,7 @@ Next you will create a verilog implementation of a 16-bit Johnson Counter and a 
 An N-bit Johnson Counter is a simple circular shift-register circuit that cycles through 2N unique states. You create it by connecting the inverted output of the last bit into the input of the first bit. Check the png for an example 4-bit johnson counter. This will correctly cycle through 2N states, but these states are not encoded as the binary integer that we want. 
 
 ####Decoder:
-This decoder will take in the N bits of the Johnson Counter and produce a binary integer (of bitsize (log2(2*N)).
+This decoder will take in the N bits of the Johnson Counter and produce a binary integer (of bitsize (log2(2N)).
 
 
 For example, Here is a 3-bit Johnson Counter cycling through all of its states.  
@@ -43,7 +43,7 @@ Feel free to read more about Johnson Counters on Wikipedia.
 2. Do not change any module definition and implement the johnson counter in 'module jcounter' and the decoder in 'module decoder'
 3. Only use structural hardware! This means:
   * You can **only**: define modules, instantiate modules, connect wires, and connect constants. 
-  * You **cannot** use: always blocks, logical/arithmetic operations (+,-,&,|,^,<<,==, etc...), or verilog primitives (keywords and,or,xor,not,etc...). This will be checked for during grading.  
+  * You **cannot** use: always/initial blocks, logical/arithmetic operations (+,-,&,|,^,<<,==, etc...), or verilog primitive modules (and,or,xor,not,etc...). This will be checked for during grading.  
   * You can instantiate any ice40 primitive defined in doc/SBTICETechnologyLibrary201504.pdf
 4. The jcounter should shift about once or twice per second (does not need to be exact)
 5. The power-on state (seed) of the jcounter should be 16'hFFFF (all ones). Remember this should actually decode to the value 16 (5'b10000).
