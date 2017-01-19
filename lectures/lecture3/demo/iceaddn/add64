@@ -1,0 +1,257 @@
+wire fa0_COUT;
+wire fa0_SUM;
+FA fa0 (J1[0], J3[0], 1'b1, fa0_SUM, fa0_COUT);
+
+wire fa1_COUT;
+wire fa1_SUM;
+FA fa1 (J1[1], J3[1], fa0_COUT, fa1_SUM, fa1_COUT);
+
+wire fa2_COUT;
+wire fa2_SUM;
+FA fa2 (J1[2], J3[2], fa1_COUT, fa2_SUM, fa2_COUT);
+
+wire fa3_COUT;
+wire fa3_SUM;
+FA fa3 (J1[3], J3[3], fa2_COUT, fa3_SUM, fa3_COUT);
+
+wire fa4_COUT;
+wire fa4_SUM;
+FA fa4 (J1[4], J3[4], fa3_COUT, fa4_SUM, fa4_COUT);
+
+wire fa5_COUT;
+wire fa5_SUM;
+FA fa5 (J1[5], J3[5], fa4_COUT, fa5_SUM, fa5_COUT);
+
+wire fa6_COUT;
+wire fa6_SUM;
+FA fa6 (J1[6], J3[6], fa5_COUT, fa6_SUM, fa6_COUT);
+
+wire fa7_COUT;
+wire fa7_SUM;
+FA fa7 (J1[7], J3[7], fa6_COUT, fa7_SUM, fa7_COUT);
+
+wire fa8_COUT;
+wire fa8_SUM;
+FA fa8 (J1[0], J3[0], fa7_COUT, fa8_SUM, fa8_COUT);
+
+wire fa9_COUT;
+wire fa9_SUM;
+FA fa9 (J1[1], J3[1], fa8_COUT, fa9_SUM, fa9_COUT);
+
+wire fa10_COUT;
+wire fa10_SUM;
+FA fa10 (J1[2], J3[2], fa9_COUT, fa10_SUM, fa10_COUT);
+
+wire fa11_COUT;
+wire fa11_SUM;
+FA fa11 (J1[3], J3[3], fa10_COUT, fa11_SUM, fa11_COUT);
+
+wire fa12_COUT;
+wire fa12_SUM;
+FA fa12 (J1[4], J3[4], fa11_COUT, fa12_SUM, fa12_COUT);
+
+wire fa13_COUT;
+wire fa13_SUM;
+FA fa13 (J1[5], J3[5], fa12_COUT, fa13_SUM, fa13_COUT);
+
+wire fa14_COUT;
+wire fa14_SUM;
+FA fa14 (J1[6], J3[6], fa13_COUT, fa14_SUM, fa14_COUT);
+
+wire fa15_COUT;
+wire fa15_SUM;
+FA fa15 (J1[7], J3[7], fa14_COUT, fa15_SUM, fa15_COUT);
+
+wire fa16_COUT;
+wire fa16_SUM;
+FA fa16 (J1[0], J3[0], fa15_COUT, fa16_SUM, fa16_COUT);
+
+wire fa17_COUT;
+wire fa17_SUM;
+FA fa17 (J1[1], J3[1], fa16_COUT, fa17_SUM, fa17_COUT);
+
+wire fa18_COUT;
+wire fa18_SUM;
+FA fa18 (J1[2], J3[2], fa17_COUT, fa18_SUM, fa18_COUT);
+
+wire fa19_COUT;
+wire fa19_SUM;
+FA fa19 (J1[3], J3[3], fa18_COUT, fa19_SUM, fa19_COUT);
+
+wire fa20_COUT;
+wire fa20_SUM;
+FA fa20 (J1[4], J3[4], fa19_COUT, fa20_SUM, fa20_COUT);
+
+wire fa21_COUT;
+wire fa21_SUM;
+FA fa21 (J1[5], J3[5], fa20_COUT, fa21_SUM, fa21_COUT);
+
+wire fa22_COUT;
+wire fa22_SUM;
+FA fa22 (J1[6], J3[6], fa21_COUT, fa22_SUM, fa22_COUT);
+
+wire fa23_COUT;
+wire fa23_SUM;
+FA fa23 (J1[7], J3[7], fa22_COUT, fa23_SUM, fa23_COUT);
+
+wire fa24_COUT;
+wire fa24_SUM;
+FA fa24 (J1[0], J3[0], fa23_COUT, fa24_SUM, fa24_COUT);
+
+wire fa25_COUT;
+wire fa25_SUM;
+FA fa25 (J1[1], J3[1], fa24_COUT, fa25_SUM, fa25_COUT);
+
+wire fa26_COUT;
+wire fa26_SUM;
+FA fa26 (J1[2], J3[2], fa25_COUT, fa26_SUM, fa26_COUT);
+
+wire fa27_COUT;
+wire fa27_SUM;
+FA fa27 (J1[3], J3[3], fa26_COUT, fa27_SUM, fa27_COUT);
+
+wire fa28_COUT;
+wire fa28_SUM;
+FA fa28 (J1[4], J3[4], fa27_COUT, fa28_SUM, fa28_COUT);
+
+wire fa29_COUT;
+wire fa29_SUM;
+FA fa29 (J1[5], J3[5], fa28_COUT, fa29_SUM, fa29_COUT);
+
+wire fa30_COUT;
+wire fa30_SUM;
+FA fa30 (J1[6], J3[6], fa29_COUT, fa30_SUM, fa30_COUT);
+
+wire fa31_COUT;
+wire fa31_SUM;
+FA fa31 (J1[7], J3[7], fa30_COUT, fa31_SUM, fa31_COUT);
+
+wire fa32_COUT;
+wire fa32_SUM;
+FA fa32 (J1[0], J3[0], fa31_COUT, fa32_SUM, fa32_COUT);
+
+wire fa33_COUT;
+wire fa33_SUM;
+FA fa33 (J1[1], J3[1], fa32_COUT, fa33_SUM, fa33_COUT);
+
+wire fa34_COUT;
+wire fa34_SUM;
+FA fa34 (J1[2], J3[2], fa33_COUT, fa34_SUM, fa34_COUT);
+
+wire fa35_COUT;
+wire fa35_SUM;
+FA fa35 (J1[3], J3[3], fa34_COUT, fa35_SUM, fa35_COUT);
+
+wire fa36_COUT;
+wire fa36_SUM;
+FA fa36 (J1[4], J3[4], fa35_COUT, fa36_SUM, fa36_COUT);
+
+wire fa37_COUT;
+wire fa37_SUM;
+FA fa37 (J1[5], J3[5], fa36_COUT, fa37_SUM, fa37_COUT);
+
+wire fa38_COUT;
+wire fa38_SUM;
+FA fa38 (J1[6], J3[6], fa37_COUT, fa38_SUM, fa38_COUT);
+
+wire fa39_COUT;
+wire fa39_SUM;
+FA fa39 (J1[7], J3[7], fa38_COUT, fa39_SUM, fa39_COUT);
+
+wire fa40_COUT;
+wire fa40_SUM;
+FA fa40 (J1[0], J3[0], fa39_COUT, fa40_SUM, fa40_COUT);
+
+wire fa41_COUT;
+wire fa41_SUM;
+FA fa41 (J1[1], J3[1], fa40_COUT, fa41_SUM, fa41_COUT);
+
+wire fa42_COUT;
+wire fa42_SUM;
+FA fa42 (J1[2], J3[2], fa41_COUT, fa42_SUM, fa42_COUT);
+
+wire fa43_COUT;
+wire fa43_SUM;
+FA fa43 (J1[3], J3[3], fa42_COUT, fa43_SUM, fa43_COUT);
+
+wire fa44_COUT;
+wire fa44_SUM;
+FA fa44 (J1[4], J3[4], fa43_COUT, fa44_SUM, fa44_COUT);
+
+wire fa45_COUT;
+wire fa45_SUM;
+FA fa45 (J1[5], J3[5], fa44_COUT, fa45_SUM, fa45_COUT);
+
+wire fa46_COUT;
+wire fa46_SUM;
+FA fa46 (J1[6], J3[6], fa45_COUT, fa46_SUM, fa46_COUT);
+
+wire fa47_COUT;
+wire fa47_SUM;
+FA fa47 (J1[7], J3[7], fa46_COUT, fa47_SUM, fa47_COUT);
+
+wire fa48_COUT;
+wire fa48_SUM;
+FA fa48 (J1[0], J3[0], fa47_COUT, fa48_SUM, fa48_COUT);
+
+wire fa49_COUT;
+wire fa49_SUM;
+FA fa49 (J1[1], J3[1], fa48_COUT, fa49_SUM, fa49_COUT);
+
+wire fa50_COUT;
+wire fa50_SUM;
+FA fa50 (J1[2], J3[2], fa49_COUT, fa50_SUM, fa50_COUT);
+
+wire fa51_COUT;
+wire fa51_SUM;
+FA fa51 (J1[3], J3[3], fa50_COUT, fa51_SUM, fa51_COUT);
+
+wire fa52_COUT;
+wire fa52_SUM;
+FA fa52 (J1[4], J3[4], fa51_COUT, fa52_SUM, fa52_COUT);
+
+wire fa53_COUT;
+wire fa53_SUM;
+FA fa53 (J1[5], J3[5], fa52_COUT, fa53_SUM, fa53_COUT);
+
+wire fa54_COUT;
+wire fa54_SUM;
+FA fa54 (J1[6], J3[6], fa53_COUT, fa54_SUM, fa54_COUT);
+
+wire fa55_COUT;
+wire fa55_SUM;
+FA fa55 (J1[7], J3[7], fa54_COUT, fa55_SUM, fa55_COUT);
+
+wire fa56_COUT;
+wire fa56_SUM;
+FA fa56 (J1[0], J3[0], fa55_COUT, fa56_SUM, fa56_COUT);
+
+wire fa57_COUT;
+wire fa57_SUM;
+FA fa57 (J1[1], J3[1], fa56_COUT, fa57_SUM, fa57_COUT);
+
+wire fa58_COUT;
+wire fa58_SUM;
+FA fa58 (J1[2], J3[2], fa57_COUT, fa58_SUM, fa58_COUT);
+
+wire fa59_COUT;
+wire fa59_SUM;
+FA fa59 (J1[3], J3[3], fa58_COUT, fa59_SUM, fa59_COUT);
+
+wire fa60_COUT;
+wire fa60_SUM;
+FA fa60 (J1[4], J3[4], fa59_COUT, fa60_SUM, fa60_COUT);
+
+wire fa61_COUT;
+wire fa61_SUM;
+FA fa61 (J1[5], J3[5], fa60_COUT, fa61_SUM, fa61_COUT);
+
+wire fa62_COUT;
+wire fa62_SUM;
+FA fa62 (J1[6], J3[6], fa61_COUT, fa62_SUM, fa62_COUT);
+
+wire fa63_COUT;
+wire fa63_SUM;
+FA fa63 (J1[7], J3[7], fa62_COUT, fa63_SUM, fa63_COUT);
+
+assign D5 = fa63_COUT;

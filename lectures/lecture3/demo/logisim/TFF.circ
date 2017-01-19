@@ -18,7 +18,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -28,7 +34,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <main name="Half Adder"/>
+  <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -36,8 +42,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </options>
   <mappings>
     <tool lib="6" map="Button2" name="Menu Tool"/>
-    <tool lib="6" map="Button3" name="Menu Tool"/>
     <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
   </mappings>
   <toolbar>
     <tool lib="6" name="Poke Tool"/>
@@ -61,44 +67,35 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="Half Adder">
-    <a name="circuit" val="Half Adder"/>
-    <a name="clabel" val=""/>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val="DFF"/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(150,260)" to="(190,260)"/>
-    <wire from="(210,170)" to="(210,240)"/>
-    <wire from="(210,240)" to="(270,240)"/>
-    <wire from="(210,150)" to="(210,170)"/>
-    <wire from="(190,260)" to="(190,280)"/>
-    <wire from="(320,260)" to="(380,260)"/>
-    <wire from="(190,190)" to="(260,190)"/>
-    <wire from="(320,170)" to="(380,170)"/>
-    <wire from="(190,280)" to="(270,280)"/>
-    <wire from="(210,150)" to="(260,150)"/>
-    <wire from="(150,170)" to="(210,170)"/>
-    <wire from="(190,190)" to="(190,260)"/>
-    <comp lib="0" loc="(150,260)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
+    <wire from="(270,290)" to="(310,290)"/>
+    <wire from="(270,290)" to="(270,320)"/>
+    <wire from="(350,290)" to="(390,290)"/>
+    <wire from="(390,290)" to="(390,320)"/>
+    <wire from="(350,270)" to="(430,270)"/>
+    <wire from="(180,270)" to="(310,270)"/>
+    <wire from="(390,290)" to="(430,290)"/>
+    <wire from="(270,320)" to="(390,320)"/>
+    <comp lib="0" loc="(180,270)" name="Clock">
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 14"/>
     </comp>
-    <comp lib="0" loc="(150,170)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="1" loc="(320,260)" name="AND Gate"/>
-    <comp lib="0" loc="(380,260)" name="Pin">
+    <comp lib="0" loc="(430,290)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="COUT"/>
+      <a name="label" val="/Q"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(320,170)" name="XOR Gate"/>
-    <comp lib="0" loc="(380,170)" name="Pin">
+    <comp lib="0" loc="(430,270)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="SUM"/>
+      <a name="label" val="Q"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="4" loc="(350,270)" name="D Flip-Flop"/>
   </circuit>
 </project>
