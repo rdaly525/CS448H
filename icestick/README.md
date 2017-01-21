@@ -18,6 +18,26 @@ These programs should be installed in a public bin directory.
 Note that if you are using a Mac,
 follow these [instruction](http://www.clifford.at/icestorm/notes_osx.html).
 
+###Installation Gotchas
+
+Packages people have needed
+
+```
+Bison
+pkg-config
+libffi
+```
+
+Bison Error
+
+```
+frontends/ilang/ilang_lexer.l:33:10: fatal error: 'ilang_parser.tab.h' file not found \#include "ilang_parser.tab.h"
+```
+
+
+
+Make sure you have the Bison package installed.
+
 One annoying problem on the Mac is the FTDI drivers.
 There are three different FTDI drivers for OSX:
 (1) Apple's driver,
