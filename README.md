@@ -4,6 +4,9 @@ Topic: Agile Hardware Design
 
 Instructor: Pat Hanrahan
 CA: Ross Daly
+  Slack: 448h.slack.com
+  Office Hours: 9:00am-11:00am Monday/Wednesday Gates 392
+  CA email: rdaly525@stanford.edu
 
 Location: 300-303
 Time: 1:30-2:50pm Tue/Thu

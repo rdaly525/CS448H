@@ -1,9 +1,9 @@
-NAME = jcounter
+NAME = jcounter-4bit
 
 PNR=arachne-pnr
 
 DEVICE = 1k
-PCF = $(NAME).pcf
+PCF = jcounter.pcf
 
 QUIET = -q
 
