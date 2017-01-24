@@ -1,0 +1,23 @@
+{
+    ".deps_version": 2, 
+    "python logic1.py build/logic1": {
+        "build/logic1.pcf": "output-3b73e7d91cd67956c0b551abe2501c87", 
+        "build/logic1.v": "output-aa9385943d337ac6eeac3ca094b8c61a", 
+        "logic1.py": "input-1d39d41a1588768ab81dec6fed76c182"
+    }, 
+    "python logic2.py build/logic2": {
+        "build/logic2.pcf": "output-3b73e7d91cd67956c0b551abe2501c87", 
+        "build/logic2.v": "output-ccbbd088d9b563c9f0dd13cc01bdd834", 
+        "logic2.py": "input-6240abba8a8dd15a02700859c96880a5"
+    }, 
+    "python logic3.py build/logic3": {
+        "build/logic3.pcf": "output-3b73e7d91cd67956c0b551abe2501c87", 
+        "build/logic3.v": "output-aa9385943d337ac6eeac3ca094b8c61a", 
+        "logic3.py": "input-2e0e3644de1f704d105c94b943b2d9c5"
+    }, 
+    "python logic4.py build/logic4": {
+        "build/logic4.pcf": "output-3b73e7d91cd67956c0b551abe2501c87", 
+        "build/logic4.v": "output-aa9385943d337ac6eeac3ca094b8c61a", 
+        "logic4.py": "input-82510c5c9527f636a31a003b8efb1696"
+    }
+}

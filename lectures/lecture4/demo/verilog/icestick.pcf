@@ -1,0 +1,45 @@
+# This is the version that you don't have to uncomment
+# things you don't use. Requires a recent version of arachne
+
+# Clock
+set_io --warn-no-port clk 21   # 12 MHz clock
+
+# LEDs
+set_io --warn-no-port D1 99  # red
+set_io --warn-no-port D2 98  # red
+set_io --warn-no-port D3 97  # red
+set_io --warn-no-port D4 96  # red
+set_io --warn-no-port D5 95  # green
+
+# J1
+set_io --warn-no-port J1[0] 112  # PIO0_02 
+set_io --warn-no-port J1[1] 113  # PIO0_03 
+set_io --warn-no-port J1[2] 114  # PIO0_04 
+set_io --warn-no-port J1[3] 115  # PIO0_05 
+set_io --warn-no-port J1[4] 116  # PIO0_06 PMOD pin 7
+set_io --warn-no-port J1[5] 117  # PIO0_07 PMOD pin 8
+set_io --warn-no-port J1[6] 118  # PIO0_08 PMOD pin 9
+set_io --warn-no-port J1[7] 119 # PIO0_09 PMOD pin 10
+
+# J3
+set_io --warn-no-port J3[0] 62  # PIO2_17
+set_io --warn-no-port J3[1] 61  # PIO2_16
+set_io --warn-no-port J3[2] 60  # PIO2_15
+set_io --warn-no-port J3[3] 56  # PIO2_14
+set_io --warn-no-port J3[4] 48  # PIO2_13
+set_io --warn-no-port J3[5] 47  # PIO2_12
+set_io --warn-no-port J3[6] 45  # PIO2_11
+set_io --warn-no-port J3[7] 44  # PIO2_10
+
+# PMOD
+# Note: pin 5 and 11 are ground, pins 6 and 12 are Vcc
+set_io --warn-no-port PMOD0[0] 78 # PIO1_02
+set_io --warn-no-port PMOD0[1] 79 # PIO1_03
+set_io --warn-no-port PMOD0[2] 80 # PIO1_04
+set_io --warn-no-port PMOD0[3] 81 # PIO1_05
+
+set_io --warn-no-port PMOD1[0] 87 # PIO1_06
+set_io --warn-no-port PMOD1[1] 88 # PIO1_07
+set_io --warn-no-port PMOD1[2] 90 # PIO1_08
+set_io --warn-no-port PMOD1[3] 91 # PIO1_09
+

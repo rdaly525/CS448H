@@ -1,0 +1,35 @@
+#set_io clk 21
+
+#set_io D1 99 # Red
+#set_io D2 98
+#set_io D3 97
+#set_io D4 96
+set_io D5 95 # Green
+
+set_io J1[0] 112
+set_io J1[1] 113
+set_io J1[2] 114
+set_io J1[3] 115
+set_io J1[4] 116
+set_io J1[5] 117
+set_io J1[6] 118
+set_io J1[7] 119
+
+set_io J3[0] 62
+set_io J3[1] 61
+set_io J3[2] 60
+set_io J3[3] 56
+set_io J3[4] 48
+set_io J3[5] 47
+set_io J3[6] 45
+set_io J3[7] 44
+
+# Pmod connector
+#set_io PMOD0[0] 78 
+#set_io PMOD0[1] 79
+#set_io PMOD0[2] 80
+#set_io PMOD0[3] 81
+#set_io PMOD1[0] 87
+#set_io PMOD1[1] 88
+#set_io PMOD1[2] 90
+#set_io PMOD1[3] 91

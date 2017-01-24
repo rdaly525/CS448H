@@ -1,0 +1,17 @@
+wire fa0_COUT;
+wire fa0_SUM;
+FA fa0 (J1[0], J3[0], 1'b1, fa0_SUM, fa0_COUT);
+
+wire fa1_COUT;
+wire fa1_SUM;
+FA fa1 (J1[1], J3[1], fa0_COUT, fa1_SUM, fa1_COUT);
+
+wire fa2_COUT;
+wire fa2_SUM;
+FA fa2 (J1[2], J3[2], fa1_COUT, fa2_SUM, fa2_COUT);
+
+wire fa3_COUT;
+wire fa3_SUM;
+FA fa3 (J1[3], J3[3], fa2_COUT, fa3_SUM, fa3_COUT);
+
+assign D5 = fa3_COUT;

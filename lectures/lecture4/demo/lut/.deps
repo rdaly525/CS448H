@@ -1,0 +1,13 @@
+{
+    ".deps_version": 2, 
+    "python lut4.py build/lut4": {
+        "build/lut4.pcf": "output-3b73e7d91cd67956c0b551abe2501c87", 
+        "build/lut4.v": "output-fd4a7baea61823d6f2ad9ee6bc936c39", 
+        "lut4.py": "input-0cc9bae7245977b899ff8db2fbe797d2"
+    }, 
+    "python rom4.py build/rom4": {
+        "build/rom4.pcf": "output-3b73e7d91cd67956c0b551abe2501c87", 
+        "build/rom4.v": "output-fd4a7baea61823d6f2ad9ee6bc936c39", 
+        "rom4.py": "input-faf385b47d15284a827844c0eb52d064"
+    }
+}

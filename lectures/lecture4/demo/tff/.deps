@@ -1,0 +1,8 @@
+{
+    ".deps_version": 2, 
+    "python tff.py build/tff": {
+        "build/tff.pcf": "output-fdd67fb3127d7744e7477750ac5ade8b", 
+        "build/tff.v": "output-2938844005eed4f9c521e1a50b21291c", 
+        "tff.py": "input-9153ce64a681f4bd6e617bd4a2098511"
+    }
+}

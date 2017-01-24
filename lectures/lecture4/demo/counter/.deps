@@ -1,0 +1,8 @@
+{
+    ".deps_version": 2, 
+    "python counter.py build/counter": {
+        "build/counter.pcf": "output-f32562cb7ae4b7268dd73b2884d40e9c", 
+        "build/counter.v": "output-9f4111e8a285040900e4608f5ef3941f", 
+        "counter.py": "input-23d5b983c410046af36441033cb6ca45"
+    }
+}
