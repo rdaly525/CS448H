@@ -1,5 +1,5 @@
-#NAME = lut4
-NAME = rom4
+NAME = lut4
+#NAME = rom4
 
 PCF = $(NAME).pcf
 

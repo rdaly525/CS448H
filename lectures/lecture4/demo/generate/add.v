@@ -19,9 +19,8 @@ generate
 for (i = 1; i < `N ; i = i + 1) begin:add
     FA fa(J1[i], J3[i], facout[i-1], fasum[i], facout[i]);
 end
+endgenerate
 
 assign D5 = facout[`N-1];
-
-endgenerate
 
 endmodule
