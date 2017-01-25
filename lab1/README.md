@@ -68,7 +68,16 @@ A script will be run to verify:
     
 
 ###Submission Instructions
-  TBD
+	
+1. Log into corn ```<ssid>@corn.stanford.edu```
+2. Create a local directory ```mkdir tmp; cd tmp```
+3. Create a README with your ssid ```echo '<ssid>' > README```
+4. Copy jcounter-4bit.v into this directory
+5. Copy any bonus files you implimented (jcounter-16bit.v, jcounter_bonus.v)
+6. Create a file called writeup.txt with a few sentences describing your apporach to the problem, any challenges you faced, and any ideas of language features to make this lab easier to express.
+7. Run: ```python /afs/ir/class/cs448h/bin/submit1.py```
+8. Verify that your files are in ```/afs/ir/class/cs448h/submissions/lab1```
+9. Rejoice and get excited for the magma lab!
 
 ###Bonus
 (1) How could we build a larger (16-bit) Johnson Counter? We cannot use simple lookup table tricks because the lookup table would have to be on the order of 2^16 bits!!
