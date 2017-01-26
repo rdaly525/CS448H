@@ -1,0 +1,31 @@
+{
+    ".deps_version": 2, 
+    "python baud.py build/baud": {
+        "baud.py": "input-694ef078086c1c21cd50051418387199", 
+        "build/baud.pcf": "output-9bef0c8b2050e10d9f38bff7967df964", 
+        "build/baud.v": "output-3a9d5508c9dca43aac6a80745111ef6e", 
+        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
+        "rom.pyc": "output-97097713d981fa984286815d39a0c2af"
+    }, 
+    "python fsm.py build/fsm": {
+        "build/fsm.pcf": "output-686653e37ebc8b77a7e432fc1e05798c", 
+        "build/fsm.v": "output-3b2f9dca26fc0dc1e124b110e8735c70", 
+        "fsm.py": "input-ebd2d2b31688484129c6f24a3a463acd", 
+        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
+        "rom.pyc": "output-88af18a4879f334cffa0f82fe534ab7c"
+    }, 
+    "python ftdi.py build/ftdi": {
+        "build/ftdi.pcf": "output-231fec63edc1e80a7789ae59c51b5c91", 
+        "build/ftdi.v": "output-06abd6dadf10d0bdfc8fc434b16b5ce4", 
+        "ftdi.py": "input-3241ad9cd4e2dce099a437f9a90f460b", 
+        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
+        "rom.pyc": "output-1d8d2f2c4976f5c749cca044e21fdfbd"
+    }, 
+    "python uart.py build/uart": {
+        "build/uart.pcf": "output-df545852549b14b33f91f6ca167d2aa6", 
+        "build/uart.v": "output-84c88533185640a36eaa95c264fff6ed", 
+        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
+        "rom.pyc": "output-2ea09f9595e80b3aafdeccff44a69033", 
+        "uart.py": "input-b26b927a280116bbdf9c5bf0105a9c5b"
+    }
+}

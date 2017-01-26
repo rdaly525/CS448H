@@ -1,0 +1,13 @@
+{
+    ".deps_version": 2, 
+    "python clsregister.py build/clsregister": {
+        "build/clsregister.pcf": "output-267b7b2ead75ac2b971831bf6e810e5d", 
+        "build/clsregister.v": "output-afd7b4d2df97562d928f757ea905a855", 
+        "clsregister.py": "input-b9ee5c9ec9f96846151eb0aa1fffee49"
+    }, 
+    "python defregister.py build/defregister": {
+        "build/defregister.pcf": "output-267b7b2ead75ac2b971831bf6e810e5d", 
+        "build/defregister.v": "output-f999b14570bcb9fce5995efe2db46a15", 
+        "defregister.py": "input-ff19582ec399333a47e3c102c945783b"
+    }
+}

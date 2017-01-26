@@ -1,0 +1,8 @@
+{
+    ".deps_version": 2, 
+    "python fulladder.py build/fulladder": {
+        "build/fulladder.pcf": "output-1147e8858332813c906c5750d422aa55", 
+        "build/fulladder.v": "output-f5493b8b2cd54619a3a6a0a658442191", 
+        "fulladder.py": "input-93958b5ff564ab04b58249c71f75003f"
+    }
+}

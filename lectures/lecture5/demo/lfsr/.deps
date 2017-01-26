@@ -1,0 +1,8 @@
+{
+    ".deps_version": 2, 
+    "python lfsr.py build/lfsr": {
+        "build/lfsr.pcf": "output-686653e37ebc8b77a7e432fc1e05798c", 
+        "build/lfsr.v": "output-ac268f255a07779241148ef329a665f3", 
+        "lfsr.py": "input-e8a4e742df7dd1688a7b4e1fca6a32e3"
+    }
+}
