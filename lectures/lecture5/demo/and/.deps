@@ -1,0 +1,8 @@
+{
+    ".deps_version": 2, 
+    "python and.py build/and": {
+        "and.py": "input-39b52932d667123154294202edcd259b", 
+        "build/and.pcf": "output-993ba1e5491b341adc5ec57160e05bc2", 
+        "build/and.v": "output-3b7c629300e04ef06977f58859cbd1f2"
+    }
+}
