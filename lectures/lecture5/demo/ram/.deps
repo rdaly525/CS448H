@@ -1,0 +1,10 @@
+{
+    ".deps_version": 2, 
+    "python ram2.py build/ram2": {
+        "build/ram2.pcf": "output-3eae7c0bf0e13b87cbe826652eb795ab", 
+        "build/ram2.v": "output-f8dc5140ec6c9ef6747873b1acabae58", 
+        "ram.py": "input-373d1cdbea025a30bcbba7ec6b6e7b69", 
+        "ram.pyc": "output-2e1bff9f556b06a4e574a04562e51d94", 
+        "ram2.py": "input-0516fa3f9da79fd6b3d58c940acc184c"
+    }
+}

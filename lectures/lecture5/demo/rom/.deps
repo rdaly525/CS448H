@@ -1,0 +1,10 @@
+{
+    ".deps_version": 2, 
+    "python rom4.py build/rom4": {
+        "build/rom4.pcf": "output-f5d7e6529dff170990ac967349ceba7c", 
+        "build/rom4.v": "output-83614582ba969a9a7453cac372f03555", 
+        "rom.py": "input-87362b594a8a30d98440c62d9a4fc17c", 
+        "rom.pyc": "output-c8c4452ecb8185ab394ab239254acf95", 
+        "rom4.py": "input-b16c7fb24c0f17f843b23cfb34938719"
+    }
+}
