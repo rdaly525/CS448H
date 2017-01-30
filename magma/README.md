@@ -33,6 +33,7 @@ export MANTLE_TARGET=ice40
 ```
 To use the icestick board with Magma,
 you need to set the MANTLE and MANTLE_TARGET environment variables.
+
 ```
 % export MANTLE=lattice
 % export MANTLE_TARGET=ice40
@@ -47,10 +48,20 @@ The output of the build script is placed in the `build` directory.
 ```
 % cd build
 % ls
-//TODO
-```
-
-From here, run the program on the icestack the same as lab1
 Makefile
 blink.ucf
 blink.v
+```
+
+From here, run the program on the icestack the same as lab1
+
+to clean the build dir, do 
+``` 
+make clean
+```
+
+to clean magma generated files
+```
+./bake clean
+```
+

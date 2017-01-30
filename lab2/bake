@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+import os, glob
+from os.path import join, exists
+from fabricate import main, autoclean, run
+
+BUILD = 'build'
+
+tests = glob.glob('*.py')
+
+def build():
+    for test in tests:
+        if test[0] != '_':
+            base, suffix = test.split('.')
+            compile(base)
+
+def compile(base):
+    u = base+'.pcf'
+    v = base+'.v'
+    run('python',base+'.py', join(BUILD,base))
+
+def clean():
+    autoclean()
+
+main()
