@@ -19,6 +19,7 @@ Then try to build and run the blink program
 ```
 % cd blink
 % . doit
+```
 
 The script, `doit` builds the program `blink.py` 
 That script is pretty simple,
