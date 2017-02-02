@@ -1,0 +1,5 @@
+yosys -q -p 'show -format dot -prefix counter' counter.v
+dot -T ps -o counter.ps counter.dot
+convert counter.ps counter.png
+open counter.png
+

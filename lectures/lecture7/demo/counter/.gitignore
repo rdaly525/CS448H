@@ -1,0 +1,10 @@
+*.txt
+*.bin
+*.blif
+*.ilang
+*.json
+*.vv
+*.dot
+*.ps
+*.png
+synth.scr

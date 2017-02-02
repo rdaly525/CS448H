@@ -1,0 +1,4 @@
+*.bin
+*.txt
+*.blif
+*.vv
