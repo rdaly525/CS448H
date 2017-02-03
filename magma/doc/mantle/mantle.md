@@ -362,7 +362,7 @@ Johnson(n, init=1, ce=False, r=False, s=False)
 
 Counters have a ```COUT```.
 ```
-# Counter :: None -> O:Bit:Array[n, Bit], COUT:Bit
+# Counter :: None -> O:Array[n, Bit], COUT:Bit
 Counter(n, cin=False, cout=True, incr=1, next=False, ce=False, r=False, s=False)
 ```
 Create an n-bit counter, with optional `CE` (clock enable), `RESET`, and `SET`.
