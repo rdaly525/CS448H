@@ -6,37 +6,25 @@ __all__  = ['Add', 'AddC']
 __all__ += ['Sub', 'SubC']
 __all__ += ['Negate']
 
-def Add(n, cin=False, **kwargs):
-    return Adders(n, cin, False, **kwargs)
+def Add(n, **kwargs):
+    return Adders(n, False, False, **kwargs)
     
-def AddC(n, cin=False, **kwargs):
-    return Adders(n, cin, True, **kwargs)
+def AddC(n, **kwargs):
+    return Adders(n, True, True, **kwargs)
 
-def Sub(n, cin=False, **kwargs):
+def Sub(n, **kwargs):
     invert = Invert(n)
-    adder =  Adders(n, cin, False, **kwargs)
+    adder =  Adders(n, True, False, **kwargs)
     wire(invert.O, adder.I1)
-    if cin:
-        return AnonymousCircuit("I0",  adder.I0, "I1", invert.I,
-                                "CIN", adder.CIN,
-                                "O",   adder.O)
-    else:
-        return AnonymousCircuit("I0", adder.I0, "I1", invert.I,
-                                "O",  adder.O)
+    wire(1, invert.CIN)
+    return AnonymousCircuit("I0", adder.I0, "I1", invert.I, "O",  adder.O)
     
-def SubC(n, cin=False, **kwargs):
+def SubC(n, **kwargs):
     invert = Invert(n)
     adder =  Adders(n, cin, True, **kwargs)
     wire(invert.O, adder.I1)
-    if cin:
-        return AnonymousCircuit("I0",   adder.I0, "I1", invert.I,
-                                "CIN",  adder.CIN,
-                                "O",    adder.O,
-                                "COUT", adder.COUT)
-    else:
-        return AnonymousCircuit("I0",   adder.I0, "I1", invert.I,
-                                "O",    adder.O,
-                                "COUT", adder.COUT)
+    return AnonymousCircuit("I0",   adder.I0, "I1", invert.I, "CIN",  adder.CIN,
+                            "O",    adder.O,  "COUT", adder.COUT)
 
 def Negate(n, **kwargs):
     invert = Invert(n)

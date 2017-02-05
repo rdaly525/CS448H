@@ -59,8 +59,9 @@ def ULT(n, **kwargs):
     return compose(not_, uge)
 
 def ULE(n, **kwargs):
-    subc = SubC(n, **kwargs)
-    return AnonymousCircuit("I0", subc.I1, "I1", subc.I0, "O", subc.COUT)
+    return Sub(n, **kwargs)
+    #subc = SubC(n, **kwargs)
+    #return AnonymousCircuit("I0", subc.I1, "I1", subc.I0, "O", subc.COUT)
 
 def UGT(n, **kwargs):
     not_ = Not()
@@ -68,8 +69,9 @@ def UGT(n, **kwargs):
     return compose(not_, ule)
 
 def UGE(n, **kwargs):
-    subc = SubC(n, **kwargs)
-    return AnonymousCircuit("I0", subc.I0, "I1", subc.I1, "O", subc.COUT)
+    return Sub(n, **kwargs)
+    #subc = SubC(n, **kwargs)
+    #return AnonymousCircuit("I0", subc.I0, "I1", subc.I1, "O", subc.COUT)
 
 
 def LT(n, **kwargs):
