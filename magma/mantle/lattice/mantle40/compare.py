@@ -2,12 +2,12 @@ from magma import *
 from mantle.lattice.mantle40.cascade import Cascade
 from parts.lattice.ice40.primitives.PLB import A0, A1, A2, A3
 from mantle.lattice.mantle40.LUT import *
-from mantle.lattice.mantle40.arith import SubC
+from mantle.lattice.mantle40.arith import Sub
 from mantle.lattice.mantle40.logic import Not
 
 __all__  = ['EQ', 'NE']
 __all__ += ['ULT', 'ULE', 'UGT', 'UGE']
-__all__ += ['LT',  'LE',  'GT',  'GE']
+#__all__ += ['LT',  'LE',  'GT',  'GE']
 
 EQ1LUT = ((A0&A1)|(~A0&~A1))
 EQ2LUT = ((A0&A1)|(~A0&~A1)) & ((A2&A3)|(~A2&~A3))
@@ -59,9 +59,8 @@ def ULT(n, **kwargs):
     return compose(not_, uge)
 
 def ULE(n, **kwargs):
-    return Sub(n, **kwargs)
-    #subc = SubC(n, **kwargs)
-    #return AnonymousCircuit("I0", subc.I1, "I1", subc.I0, "O", subc.COUT)
+    sub = Sub(n, **kwargs)
+    return AnonymousCircuit("I0", sub.I1, "I1", sub.I0, "O", sub.COUT)
 
 def UGT(n, **kwargs):
     not_ = Not()
@@ -69,9 +68,8 @@ def UGT(n, **kwargs):
     return compose(not_, ule)
 
 def UGE(n, **kwargs):
-    return Sub(n, **kwargs)
-    #subc = SubC(n, **kwargs)
-    #return AnonymousCircuit("I0", subc.I0, "I1", subc.I1, "O", subc.COUT)
+    sub = Sub(n, **kwargs)
+    return AnonymousCircuit("I0", sub.I0, "I1", sub.I1, "O", sub.COUT)
 
 
 def LT(n, **kwargs):

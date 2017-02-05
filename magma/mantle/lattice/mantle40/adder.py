@@ -39,8 +39,8 @@ def FullAdder(**kwargs):
 
 AdderCache = {}
 
-def _AdderName(n, cin, cout):
-    return ('Adc%d' if cin or cout else 'Add%d') % n
+def _AdderName(n, cin):
+    return ('Adc%d' if cin else 'Add%d') % n
 
 #
 # create an n-bit Adder from n FullAdders
@@ -51,7 +51,7 @@ def _AdderName(n, cin, cout):
 # if cout: COUT is added to the circuit
 #
 def DefineAdders(n, cin, cout, forkargs=[]):
-    name = _AdderName(n, cin, cout)
+    name = _AdderName(n, cin)
     if name in AdderCache:
        return AdderCache[name]
 
