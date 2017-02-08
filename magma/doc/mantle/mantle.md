@@ -99,8 +99,8 @@ rom = ROM16XN(rom) :: I:Array(16, Bit) -> O:Array(n, Bit)
 
 ### MUXs
 
-The second fundamental combinational primitive 
-in an FPGA is a multiplexer, or a MUX.
+The second fundamental combinational primitive in an FPGA is a multiplexer,
+or a MUX.
 
 The simplest MUXes select amongts a small number of inputs.
 ```I``` is an array of n bit values, or ```Array(n,Bit)```
@@ -121,11 +121,15 @@ A more general MUX selects amongst ```height``` inputs
 each with a given ```width```.
 
 ```
-mux = Mux(height, width) :: 
-    I:Array(height, Array(width, Bit)),
-    S:Array(log(height), Bit) 
-    -> O:Array(height, Bit)
+mux = Mux(height, width)
 ```
+This MUX breaks out the inputs as arguments.
+For example, the type signatures of
+```
+Mux(2,8) :: I0 : Array(8,In(Bit)), I1 : Array(8,In(Bit)), S : In(Bit) -> O : Array(8,Out(Bit))
+Mux(4,8) :: I0 : Array(8,In(Bit)), I1 : Array(8,In(Bit)), 
+I2 : Array(8,In(Bit)), I3 : Array(8,In(Bit)), S : In(Bit) -> O : Array(8,Out(Bit))
+``
 
 
 ### Logic
