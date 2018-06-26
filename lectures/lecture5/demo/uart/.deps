@@ -1,31 +1,71 @@
 {
-    ".deps_version": 2, 
-    "python baud.py build/baud": {
-        "baud.py": "input-694ef078086c1c21cd50051418387199", 
-        "build/baud.pcf": "output-9bef0c8b2050e10d9f38bff7967df964", 
-        "build/baud.v": "output-3a9d5508c9dca43aac6a80745111ef6e", 
-        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
-        "rom.pyc": "output-97097713d981fa984286815d39a0c2af"
-    }, 
-    "python fsm.py build/fsm": {
-        "build/fsm.pcf": "output-686653e37ebc8b77a7e432fc1e05798c", 
-        "build/fsm.v": "output-3b2f9dca26fc0dc1e124b110e8735c70", 
-        "fsm.py": "input-ebd2d2b31688484129c6f24a3a463acd", 
-        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
-        "rom.pyc": "output-88af18a4879f334cffa0f82fe534ab7c"
-    }, 
-    "python ftdi.py build/ftdi": {
-        "build/ftdi.pcf": "output-231fec63edc1e80a7789ae59c51b5c91", 
-        "build/ftdi.v": "output-06abd6dadf10d0bdfc8fc434b16b5ce4", 
-        "ftdi.py": "input-3241ad9cd4e2dce099a437f9a90f460b", 
-        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
-        "rom.pyc": "output-1d8d2f2c4976f5c749cca044e21fdfbd"
-    }, 
-    "python uart.py build/uart": {
-        "build/uart.pcf": "output-df545852549b14b33f91f6ca167d2aa6", 
-        "build/uart.v": "output-84c88533185640a36eaa95c264fff6ed", 
-        "rom.py": "input-69d6d0bce837c0360a9dcaa03e4c8da0", 
-        "rom.pyc": "output-2ea09f9595e80b3aafdeccff44a69033", 
-        "uart.py": "input-b26b927a280116bbdf9c5bf0105a9c5b"
+    ".deps_version": 2,
+    "cmp build/baud.pcf gold/baud.pcf": {
+        "build/baud.pcf": "input-9bef0c8b2050e10d9f38bff7967df964",
+        "gold/baud.pcf": "input-9bef0c8b2050e10d9f38bff7967df964"
+    },
+    "cmp build/baud.v gold/baud.v": {
+        "build/baud.v": "input-f1cf934bfe20dafba1ed00c0ada8c949",
+        "gold/baud.v": "input-f1cf934bfe20dafba1ed00c0ada8c949"
+    },
+    "cmp build/fsm.pcf gold/fsm.pcf": {
+        "build/fsm.pcf": "input-686653e37ebc8b77a7e432fc1e05798c",
+        "gold/fsm.pcf": "input-686653e37ebc8b77a7e432fc1e05798c"
+    },
+    "cmp build/fsm.v gold/fsm.v": {
+        "build/fsm.v": "input-947f021b1a81106bbc7a92fdba173cc8",
+        "gold/fsm.v": "input-947f021b1a81106bbc7a92fdba173cc8"
+    },
+    "cmp build/ftdi.pcf gold/ftdi.pcf": {
+        "build/ftdi.pcf": "input-231fec63edc1e80a7789ae59c51b5c91",
+        "gold/ftdi.pcf": "input-231fec63edc1e80a7789ae59c51b5c91"
+    },
+    "cmp build/ftdi.v gold/ftdi.v": {
+        "build/ftdi.v": "input-f8de518a325db1fa0ee007e314fb73fd",
+        "gold/ftdi.v": "input-f8de518a325db1fa0ee007e314fb73fd"
+    },
+    "cmp build/uart.pcf gold/uart.pcf": {
+        "build/uart.pcf": "input-df545852549b14b33f91f6ca167d2aa6",
+        "gold/uart.pcf": "input-df545852549b14b33f91f6ca167d2aa6"
+    },
+    "cmp build/uart.v gold/uart.v": {
+        "build/uart.v": "input-1c83592b9bac1dd95e0f720de0e6a8fc",
+        "gold/uart.v": "input-1c83592b9bac1dd95e0f720de0e6a8fc"
+    },
+    "magma -b icestick -d build baud": {
+        "__pycache__/baud.cpython-36.pyc": "input-d27274972a4f44fd95e4cf40b54c9913",
+        "__pycache__/rom.cpython-36.pyc": "input-ee2450e5f2d9b94a537aa4a761e92dc3",
+        "baud.py": "input-50617968834fb72057a7c20a6ba35249",
+        "build/baud.pcf": "output-9bef0c8b2050e10d9f38bff7967df964",
+        "build/baud.v": "output-f1cf934bfe20dafba1ed00c0ada8c949"
+    },
+    "magma -b icestick -d build fsm": {
+        "__pycache__/fsm.cpython-36.pyc": "input-fa5bf856e40fe63b1546af1dd69f4ec7",
+        "__pycache__/rom.cpython-36.pyc": "input-ee2450e5f2d9b94a537aa4a761e92dc3",
+        "build/baud.pcf": "input-9bef0c8b2050e10d9f38bff7967df964",
+        "build/baud.v": "input-f1cf934bfe20dafba1ed00c0ada8c949",
+        "build/fsm.pcf": "output-686653e37ebc8b77a7e432fc1e05798c",
+        "build/fsm.v": "output-947f021b1a81106bbc7a92fdba173cc8",
+        "fsm.py": "input-641f75f3e3c0526a03bb3aa20787d227"
+    },
+    "magma -b icestick -d build ftdi": {
+        "__pycache__/ftdi.cpython-36.pyc": "input-894f2b1904a30fef814f9fb1ec18819e",
+        "__pycache__/rom.cpython-36.pyc": "input-ee2450e5f2d9b94a537aa4a761e92dc3",
+        "build/fsm.pcf": "input-686653e37ebc8b77a7e432fc1e05798c",
+        "build/fsm.v": "input-947f021b1a81106bbc7a92fdba173cc8",
+        "build/ftdi.pcf": "output-231fec63edc1e80a7789ae59c51b5c91",
+        "build/ftdi.v": "output-f8de518a325db1fa0ee007e314fb73fd",
+        "ftdi.py": "input-de83d583f90ef84a36ba2357003634a4",
+        "rom.py": "input-42ddc7060d5a2077bf9e84abc34ef306"
+    },
+    "magma -b icestick -d build uart": {
+        "__pycache__/rom.cpython-36.pyc": "input-ee2450e5f2d9b94a537aa4a761e92dc3",
+        "__pycache__/uart.cpython-36.pyc": "input-b2146311704814b40be0a84f5723000d",
+        "build/ftdi.pcf": "input-231fec63edc1e80a7789ae59c51b5c91",
+        "build/ftdi.v": "input-f8de518a325db1fa0ee007e314fb73fd",
+        "build/uart.pcf": "output-df545852549b14b33f91f6ca167d2aa6",
+        "build/uart.v": "output-1c83592b9bac1dd95e0f720de0e6a8fc",
+        "rom.py": "input-42ddc7060d5a2077bf9e84abc34ef306",
+        "uart.py": "input-8049fcc5c30d2dcafa339092a805d0a5"
     }
 }

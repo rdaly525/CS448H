@@ -1,8 +1,7 @@
-import sys
 from magma import *
 from mantle import *
 from rom import ROM
-from boards.icestick import IceStick
+from loam.boards.icestick import IceStick
 
 icestick = IceStick()
 icestick.Clock.on()
@@ -17,5 +16,4 @@ baud = clock.COUT
 wire(main.CLKIN, main.J3[0])
 wire(baud,       main.J3[1])
 
-compile(sys.argv[1], main)
 

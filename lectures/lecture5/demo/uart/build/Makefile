@@ -1,7 +1,7 @@
 #NAME = baud
 #NAME = fsm
-#NAME = uart
-NAME = ftdi
+NAME = uart
+#NAME = ftdi
 
 PCF = $(NAME).pcf
 
